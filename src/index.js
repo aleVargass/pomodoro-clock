@@ -101,7 +101,9 @@ class Clock extends React.Component {
             timer: 1500,
             label: "START",
             intervalID: "",
-            buttonState: buttonUnpress
+            buttonState: buttonUnpress,
+            backgroundColor: sessionBackgroundColor,
+            textColorButton: sessionColor
         })
         if (this.state.intervalID) {
             this.state.intervalID.cancel()
