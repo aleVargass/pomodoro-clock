@@ -35,7 +35,7 @@ class Clock extends React.Component {
             session: 25,
             timerState: "stopped",
             intervalID: "",
-            timer: 1,
+            timer: 1500,
             timerType: "Session",
             label: "START",
             buttonState: buttonUnpress,
