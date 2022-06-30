@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 480px;
+  margin: 0 20px;
+  padding: 20px 0 30px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #FFF;
+  text-align: center;
+}
+
+#session-control .container-caret, #break-control .container-caret {
+  position: relative;
+}
+
+#session-control .caret, #break-control .caret {
+  position: relative;
+  top: 5px;
+}
+
+#session-control .caret-down, #break-control .caret-down {
+  position: relative;
+  bottom: 5px;
+}
+
+#controls-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#timer {
+  margin-top: 20px;
+}
+
+#timer #time-left {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+#timercontrol-container {
+  margin-top: 20px;
+}
+
+#timercontrol-container #container-start_stop {
+  display: inline;
+}
+
+#timercontrol-container #start_stop {
+  height: 50px;
+  width: 140px;
+  border-radius: 4px;
+  font-size: 22px;
+  background-color: #FFF;
+  -webkit-box-shadow: #ebebeb 0 6px 0;
+          box-shadow: #ebebeb 0 6px 0;
+}
+
+#timercontrol-container #reset {
+  position: absolute;
+  -webkit-transform: translate(50%, 10%);
+          transform: translate(50%, 10%);
+  padding: 8px 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=index.css.map */

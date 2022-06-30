@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    width: 480px;
+    margin: 0 20px;
+    padding: 20px 0 30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .1);
+    font-family: "Rubik";
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+}
+
+#session-control, #break-control {
+    .container-caret {
+        position: relative;
+    }
+    .caret {
+        position: relative;
+        top: 5px;
+    }
+    .caret-down {
+        position: relative;
+        bottom: 5px
+    }
+}
+
+
+#controls-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#timer {
+    margin-top: 20px;
+    #time-left {
+        font-size: 100px;
+        font-weight: bold;
+    }
+}
+
+#timercontrol-container {
+    margin-top: 20px;
+    #container-start_stop {
+        display: inline;
+    }
+    #start_stop {
+        height: 50px;
+        width: 140px;
+        border-radius: 4px;
+        font-size: 22px;
+        background-color: #FFF;
+        box-shadow: rgb(235, 235, 235) 0 6px 0;
+    }
+    #reset {
+        position: absolute;
+        transform: translate(50%, 10%);
+        padding: 8px 10px;
+    }
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
